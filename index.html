@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fishing game</title>
+    <link rel="icon" type="image/svg" href="./Images/fishes/fish1.svg">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/animations.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/itemList.js" ></script>
+    <script src="js/functions.js" ></script>
+    <script src="js/classes.js" ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <section id="start" class="startpage">
+      <div class="container">
+        <div class="starttop">
+          <img src="Images/goals/GoalsLogo.svg" alt="The global goals logo">
+        </div>
+        <div class="icongrid">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_1.svg" alt="The Global Goals Icon 1">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_2.svg" alt="The Global Goals Icon 2">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_3.svg" alt="The Global Goals Icon 3">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_4.svg" alt="The Global Goals Icon 4">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_5.svg" alt="The Global Goals Icon 5">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_6.svg" alt="The Global Goals Icon 6">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_7.svg" alt="The Global Goals Icon 7">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_8.svg" alt="The Global Goals Icon 8">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_9.svg" alt="The Global Goals Icon 9">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_10.svg" alt="The Global Goals Icon 10">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_11.svg" alt="The Global Goals Icon 11">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_12.svg" alt="The Global Goals Icon 12">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_13.svg" alt="The Global Goals Icon 13">
+          <a href="#landing" class="toggle-journey-button" ><img class="icon active" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_14.svg" alt="The Global Goals Icon 14"></a>
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_15.svg" alt="The Global Goals Icon 15">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_16.svg" alt="The Global Goals Icon 16">
+          <img class="icon" src="Images/goals/TheGlobalGoals_Icons_Color_Goal_17.svg" alt="The Global Goals Icon 17">
+        </div>
+      </div>
+      
+    </section>
+    
+    <section id="game-section" class="hidden">
+
+      <section id="landing" class="landing-page">
+
+        <div class="container">
+
+          <div class="landing-page-content-wrapper">
+            
+            <div class="landing-page-text">
+              <h3 class="top-heading">Global Goal 14</h3>
+              <h1>Life Below Water</h1>
+              <p>Healthy oceans and seas are essential to our existence. They cover 70 percent of our planet and we rely on them for food, energy and water. Yet, we have managed to do tremendous damage to these precious resources. We must protect them by eliminating pollution and overfishing and immediately start to responsibly manage and protect all marine life around the world.<br><br><b> Press the button below to play the fishing game and learn more about the current state of our oceans.</b></p>
+              <div class="button-group">
+                <a href="#game" class="button" id="game-start">Play Fishing Game</a>
+                <a href="#start" class="button toggle-journey-button">Back to Global Goals</a>
+              </div>
+            </div>
+
+            <div class="landing-page-media">
+              <img src="Images/landing-rolf.svg" alt="A fisherman">
+            </div>
+          
+          </div>
+        
+        </div>
+        
+      </section>
+
+      <section id="game" class="game-wrapper">
+        <div class="game-back-button" id="game-pause">
+        <a href="#landing"><img class="backbutton" src="Images/goback.svg" alt="Go back to instructions"></a>
+        </div>
+        <div class="info-button">
+        <img class="infobutton" src="Images/infoicon.svg" alt="Get information on how to play">
+        </div>
+        <div class="rolf">
+          <div class="rolfbild">
+            <img src="Images/rolf.svg" alt="fisherman in boat">
+            <div class="rolf-hook">
+              <div class="hook-container">
+                <img src="Images/hook.svg" alt="line and hook">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sky-wrapper">
+
+          <div class="sun">
+            <img src="Images/sun-outer.svg" alt="sun" class="outer">
+            <img src="Images/sun-center.svg" alt="sun" class="center">
+          </div>
+        </div>
+
+        <div class="ocean-wrapper">
+          <div class="sand">
+            <img src="Images/Sand.svg" alt="sandbottom">
+          </div>
+          
+          <img class="oceanback" src="Images/WaterBack.svg" alt="water">
+        
+          <img class="oceanfront" src="Images/WaterFront.svg" alt="water">
+        </div>
+
+        <div class="modal-container popup">
+          <div class="modal-container-inner">
+
+            <picture>
+              <source media="(max-width: 676px)" srcset="Images/modal-background-rotated.svg">
+              <source media="(min-width: 677px)" srcset="Images/modal-background.svg">
+              <img src="Images/modal-background.svg" alt="A background shape in the form of a worn piece of paper" class="modal-background">
+            </picture>
+
+            <div class="modal-content-wrapper">
+
+              <div class="info-modal-icon">
+                <img src="Images/objects/deadfish.svg" alt="Toxic Barrel" id="info-modal-image">
+              </div>
+              
+              <div class="text">
+                <h3 id="info-modal-h3"></h3>
+                <h1 id="info-modal-h1"></h1>
+                <p id="info-modal-body"></p>
+              </div>
+        
+              <div class="button-group">
+                <button class="button closebutton">Try again</button>
+                <a id="CTA-button" class="button closebutton" target="_blank">Get involved </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="modal-container startup is-showing">
+          <div class="modal-container-inner">
+
+            <picture>
+              <source media="(max-width: 675px)" srcset="Images/modal-background-rotated.svg">
+              <source media="(min-width: 676px)" srcset="Images/modal-background.svg">
+              <img src="Images/modal-background.svg" alt="A background shape in the form of a worn piece of paper" class="modal-background">
+            </picture>
+
+            <div class="modal-content-wrapper">
+              <div class="instructionstext">
+                <h2>Welcome! My name is Rolf and this is my day fishing!</h2>
+                <p id="instructionsbody">Move me around with your cursor and click when you are ready to cast the line.</p>
+              </div>
+              <div class="instructionanimation">
+              <img id="instructionsbackground" src="Images/instructions_background.svg" alt="blue square background">
+              <img id="instructionsrolf" src="Images/instructions_rolf.svg" alt="fisherman in boat">
+              <img id="instructionspointer" src="Images/instructions_pointer.svg" alt="mouse pointer">
+              </div>
+              <div class="button-group">
+                <button class="button closebutton">I understand</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
